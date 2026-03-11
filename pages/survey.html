@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Survey Perokok</title>
+</head>
+<body>
+    <form>
+        <h1>Survey Perokok Koda</h1>
+        <div>
+            <label for="name"><b>Name</b></label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <label for="age"><b>Umur</b></label>
+            <input type="number" name="age" id="age">
+        </div>
+        <div>
+            <label><b>Jenis Kelamin</b></label>
+            <input type="radio" name="gender" id="L"><label for="L">Laki-laki</label>
+            <input type="radio" name="gender" id="P"><label for="P">Perempuan</label>
+        </div>
+        <div>
+            <label for="is-smoker"><b>Apakah anda seorang perokok?</b></label>
+            <select name="smoker" id="is-smoker">
+                <option value="false" disabled selected>Silahkan Pilih</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+        <div>
+            <label><b>Brand rokok yang digunakan?</b></label>
+            <br>
+            <input type="checkbox" name="cigarette" id="sampoerna"><label for="sampoerna">Sampoerna</label>
+            <input type="checkbox" name="cigarette" id="gg"><label for="gg">Gudang Garam</label>
+            <input type="checkbox" name="cigarette" id="djarum"><label for="djarum">Djarum Super</label>
+            <input type="checkbox" name="cigarette" id="marlboro"><label for="marlboro">Marlboro</label>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
