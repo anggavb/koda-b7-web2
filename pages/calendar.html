@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalender Mei 2026</title>
+
+    <style>
+        .container {
+            display: block;
+            width: fit-content;
+            margin: 0 auto;
+            font-weight: bold;
+        }
+        .date {
+            border: 2px solid thistle;
+        }
+        .day, .month, .box {
+            margin-bottom: 10px;
+            display: block; /* mengembalikan fungsi div ke block supaya bisa di bungkus, karena sebelumnya kena inline-block */
+            width: fit-content;
+        }
+        .day {
+            background-image: linear-gradient(to right, #9ff6fc, #cbcbf7, #f7cbf7, #f7cbcb);
+            border-radius: 30%;
+        }
+        .month {
+            padding-left: 2em;
+        }
+        .header {
+            /* border: 5px solid black; */
+            height: 100px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .box {
+            margin-block: 5px;
+        }
+        .content {
+            /* border: 5px solid black; */
+            height: 50px;
+            width: 140px;
+            display: inline-block;
+            vertical-align: top; /* perlu pake ini untuk benerin konten kosong ketika pake display: inline-block */
+            font-size: 2rem;
+            text-align: center;
+        }
+        .day-text {
+            font-size: 2.2rem;
+        }
+        .march {
+            font-size: 4rem;
+        }
+        .march-text {
+            padding-right: 12em;
+        }
+        .ramadhan {
+            padding-right: 9em;
+        }
+        p {
+            font-weight: bold;
+        }
+        .holiday {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="month">
+            <div class="header march-text">
+                <span class="march">Maret 2026</span>
+            </div>
+            <div class="header ramadhan">
+                <p>Ramadhan - Syawal</p>
+                <p>1447 Hijriah</p>
+            </div>
+            <div class="header march">03</div>
+        </div>
+        <div class="day">
+            <div class="content day-text">Senin</div>
+            <div class="content day-text">Selasa</div>
+            <div class="content day-text">Rabu</div>
+            <div class="content day-text">Kamis</div>
+            <div class="content day-text">Jumat</div>
+            <div class="content day-text">Sabtu</div>
+            <div class="content day-text holiday">Minggu</div>
+        </div>
+        <div class="date">
+            <div class="box">
+                <div class="content"></div>
+                <div class="content"></div>
+                <div class="content"></div>
+                <div class="content"></div>
+                <div class="content"></div>
+                <div class="content"></div>
+                <div class="content holiday">1</div>
+            </div>
+            <div class="box">
+                <div class="content">2</div>
+                <div class="content">3</div>
+                <div class="content">4</div>
+                <div class="content">5</div>
+                <div class="content">6</div>
+                <div class="content">7</div>
+                <div class="content holiday">8</div>
+            </div>
+            <div class="box">
+                <div class="content">9</div>
+                <div class="content">10</div>
+                <div class="content">11</div>
+                <div class="content">12</div>
+                <div class="content">13</div>
+                <div class="content">14</div>
+                <div class="content holiday">15</div>
+            </div>
+            <div class="box">
+                <div class="content">16</div>
+                <div class="content">17</div>
+                <div class="content holiday">18</div>
+                <div class="content holiday">19</div>
+                <div class="content holiday">20</div>
+                <div class="content holiday">21</div>
+                <div class="content holiday">22</div>
+            </div>
+            <div class="box">
+                <div class="content holiday">23</div>
+                <div class="content holiday">24</div>
+                <div class="content">25</div>
+                <div class="content">26</div>
+                <div class="content">27</div>
+                <div class="content">28</div>
+                <div class="content holiday">29</div>
+            </div>
+            <div class="box">
+                <div class="content">30</div>
+                <div class="content">31</div>
+                <div class="content"></div>
+                <div class="content"></div>
+                <div class="content"></div>
+                <div class="content"></div>
+                <div class="content holiday"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
